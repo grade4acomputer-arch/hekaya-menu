@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>حكاية | قائمة الطعام</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="قائمة طعام مطعم حكاية - نكهات تُروى في كل طبق">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; margin:0; padding:0; font-family: 'Cairo', sans-serif; }
+        body { background-color: #0f0f0f; color: #f5f5f5; line-height:1.8; }
+        header { background: linear-gradient(135deg, #1c1c1c, #2a1a10); text-align:center; padding:40px 20px; border-bottom:2px solid #b68c5a; }
+        header h1 { font-size:2.5rem; color:#d4af37; }
+        header p { color:#ccc; margin-top:10px; font-size:1.1rem; }
+        nav { position:sticky; top:0; background-color:#111; padding:10px; display:flex; justify-content:center; gap:10px; z-index:100; box-shadow:0 2px 5px rgba(0,0,0,0.5);}
+        nav a { color:#d4af37; text-decoration:none; padding:8px 15px; border:1px solid #d4af37; border-radius:20px; font-size:0.9rem; transition:0.3s; }
+        nav a:hover { background-color:#d4af37; color:#111; }
+        section { padding:40px 20px; max-width:1200px; margin:auto; }
+        section h2 { color:#d4af37; margin-bottom:25px; font-size:1.8rem; border-right:4px solid #d4af37; padding-right:10px; }
+        .menu-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+        .menu-item { background-color:#1a1a1a; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(0,0,0,0.4); transition: transform 0.3s; }
+        .menu-item:hover { transform: translateY(-5px); }
+        .menu-item img { width:100%; height:180px; object-fit:cover; }
+        .menu-content { padding:15px; }
+        .menu-content h3 { color:#fff; font-size:1.1rem; margin-bottom:8px; }
+        .menu-content p { color:#aaa; font-size:0.9rem; margin-bottom:10px; }
+        .price { color:#d4af37; font-weight:bold; font-size:1rem; }
+        footer { text-align:center; padding:20px; background-color:#111; color:#777; border-top:1px solid #333; }
+        @media(max-width:768px){ header h1{font-size:2rem;} nav{flex-wrap:wrap;} .menu-grid{grid-template-columns:1fr;} }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>حكاية</h1>
+    <p>نكهات تُروى في كل طبق</p>
+</header>
+
+<nav>
+    <a href="#sidedishes">الأطباق الجانبية</a>
+    <a href="#grill">المشويات</a>
+    <a href="#rice">الارز</a>
+    <a href="#sandwiches">السندوتشات</a>
+    <a href="#meals">الوجبات</a>
+    <a href="#pasta">المكرونة</a>
+    <a href="#drinks">المشروبات</a>
+</nav>
+
+<!-- SIDE DISHES -->
+<!-- SIDE DISHES -->
+<section id="side-dishes">
+    <h2>🥗 أطباق جانبية | Side Dishes</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://i0.wp.com/mrfelafel.com/wp-content/uploads/2022/05/labaneh-min.jpg?w=750&ssl=1" alt="Labneh">
+            <div class="menu-content">
+                <h3>لبنة | Labneh</h3>
+                <span class="price">0.500 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Hummus_from_The_Nile.jpg" alt="Hummus">
+            <div class="menu-content">
+                <h3>حمص | Hummus</h3>
+                <span class="price">0.600 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://modo3.com/thumbs/fit630x300/539/1350308889/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%B9%D9%85%D9%84_%D8%A7%D9%84%D9%81%D9%88%D9%84.jpg" alt="Foul / Fava Beans">
+            <div class="menu-content">
+                <h3>فول | Foul </h3>
+                <span class="price">0.500 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://crownful.s3.amazonaws.com/recipe/6c46024a2d6a4a6499c5a1a62d8cdd5b.png" alt="French Fries">
+            <div class="menu-content">
+                <h3>أصابع البطاطس | French Fries</h3>
+                <span class="price">0.500 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://kitchen.juneidi.com/wp-content/uploads/2023/09/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84-%D9%85%D8%AA%D8%A8%D9%84-%D8%A7%D9%84%D8%A8%D8%A7%D8%B0%D9%86%D8%AC%D8%A7%D9%86.webp" alt="Mtabel / Spicy Eggplant Dip">
+            <div class="menu-content">
+                <h3>متبل | Mtabel </h3>
+                <span class="price">0.700 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmu3e2DGtvgbtp0jICKddJP3d1bGYTkCYFg&s" alt="Tabouleh">
+            <div class="menu-content">
+                <h3>تبولة | Tabouleh</h3>
+                <span class="price">0.700 ر.ع</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- GRILL -->
+<section id="grill">
+    <h2>🔥 المشويات | Grills</h2>
+    <div class="menu-grid">
+        <div class="menu-item"><img src="https://t4.ftcdn.net/jpg/02/15/92/17/360_F_215921743_7NZzZCCIc1T34gd6Kj6wOSzP3KbnDuXB.jpg" alt="Hekaya Grilled Mix"><div class="menu-content"><h3>Hekaya Grilled Mix</h3><span class="price">3.200 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://www.nizampide.com/wp-content/uploads/2018/07/kar%C4%B1%C5%9F%C4%B1k-kebap-%C4%B1zgara-porsiyon-nizam-pide-s%C3%BCtla%C3%A7-istanbul-beyo%C4%9Flu-istiklal-caddesi-3.jpg" alt="Medium Grilled Mix"><div class="menu-content"><h3>Medium Grilled Mix</h3><span class="price">4.800 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://tb-static.uber.com/prod/image-proc/processed_images/9797a651cf371febc5e5d8041c304dae/0fb376d1da56c05644450062d25c5c84.jpeg" alt="Family Hekaya Mix"><div class="menu-content"><h3>Family Hekaya Mix</h3><span class="price">8.500 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14NrO1wfwYuo6mmIVoDnFYAZc7fJ0iNYGPw&s" alt="Chicken tikka plate"><div class="menu-content"><h3>Chicken tikka plate</h3><span class="price">3.500 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://www.shutterstock.com/shutterstock/photos/382237984/display_1500/stock-photo-plate-of-arabic-kebab-meat-with-grilled-vegetables-382237984.jpg" alt="Meat kebab plate"><div class="menu-content"><h3>Meat kebab plate</h3><span class="price">2.600 ر.ع</span></div></div>
+    </div>
+</section>
+<!-- RICE SECTION -->
+<section id="rice">
+    <h2>🍚 أطباق الأرز | Rice Dishes</h2>
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-S1-1.jpg" alt="White Rice">
+            <div class="menu-content">
+                <h3>أرز أبيض | White Rice (Plain Basmati)</h3>
+                <span class="price">0.700 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/12/4d/05/124d05c0464cc8f0eb1c8ac4cdbb4bfe.jpg" alt="Mandi Rice">
+            <div class="menu-content">
+                <h3>أرز مندي سادة | Mandi Rice</h3>
+                <span class="price">1.000 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://thumbs.dreamstime.com/b/plain-kabsa-rice-bowl-simple-serving-plain-kabsa-rice-wooden-bowl-332343819.jpg" alt="Kabsa Rice">
+            <div class="menu-content">
+                <h3>أرز كبسة سادة | Kabsa Rice</h3>
+                <span class="price">1.000 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.hungrypaprikas.com/wp-content/uploads/2022/05/Chicken-Mandi-18-1024x1536.jpg" alt="Chicken Mandi">
+            <div class="menu-content">
+                <h3>مندي دجاج | Chicken Mandi</h3>
+                <span class="price">1.800 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://burmawalakitchen.com/wp-content/uploads/2024/05/lamb-Mandi-4-769x1024.jpg" alt="Lamb Mandi">
+            <div class="menu-content">
+                <h3>مندي لحم | Lamb Mandi</h3>
+                <span class="price">2.300 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop" alt="Chicken Biryani">
+            <div class="menu-content">
+                <h3>برياني دجاج | Chicken Biryani</h3>
+                <span class="price">1.800 ر.ع</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://restaurants.mu/blog-admin/wp-content/uploads/2018/10/beef-briani-2.jpg" alt="Lamb Biryani">
+            <div class="menu-content">
+                <h3>برياني لحم | Lamb Biryani</h3>
+                <span class="price">2.300 ر.ع</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SANDWICHES -->
+<section id="sandwiches">
+    <h2>🥪 السندوتشات | Sandwiches</h2>
+    <div class="menu-grid">
+        <!-- Grilled Sandwiches -->
+        <div class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxJDXNUUN-_X7WRQ30JuCrQKma71p1PQJ_Q&s" alt="Hawawshi"><div class="menu-content"><h3>Hawawshi</h3><span class="price">0.700 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://firepiit.com/wp-content/uploads/2025/10/%D8%AA%D9%83%D9%87-%D8%AF%D8%AC%D8%A7%D8%AC.jpeg" alt="Chicken tikka sandwich"><div class="menu-content"><h3>Chicken tikka</h3><span class="price">0.800 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvJv8fpeGiHtYiX59MGFp4nuoFfM3yX9qDw&s" alt="Meat kebab sandwich"><div class="menu-content"><h3>Meat kebab</h3><span class="price">0.900 ر.ع</span></div></div>
+
+        <!-- Vegetarian Sandwiches -->
+        <div class="menu-item"><img src="https://ordinaryvegan.net/wp-content/uploads/2025/06/Vegan-Baked-Falafel-resize-600x600-1.webp" alt="Falafel sandwich"><div class="menu-content"><h3>فلافل</h3><span class="price">0.600 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://www.chelseasmessyapron.com/wp-content/uploads/2017/06/Italian-Sausage-Sandwich-CHELSEASMESSYAPRON-1200-3-500x500.jpg" alt="sausage sandwich"><div class="menu-content"><h3>سندويش نقانق </h3><span class="price">0.750 ر.ع</span></div></div>
+     
+    </div>
+</section>
+
+<!-- MEALS -->
+<section id="meals">
+    <h2>🍽️ الوجبات | Meals</h2>
+    <div class="menu-grid">
+        <div class="menu-item"><img src="https://secretrecipebd.com/wp-content/uploads/2020/10/BEEF-BURGER-WITH-MEAL-.jpeg" alt="beef burger meal"><div class="menu-content"><h3>beef burger meal</h3><span class="price">1.900 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://pizzativerton.co.uk/wp-content/uploads/2016/02/chicken_fillet_burger_meal-500x500.jpg" alt="chicken burger meal"><div class="menu-content"><h3>chicken burger meal</h3><span class="price">1.800 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/48f906838a461400f8c005bb4ea56e83.jpg?width=1440&quality=75&webp=true" alt="zinger rap meal"><div class="menu-content"><h3>zinger rap meal</h3><span class="price">1.500 ر.ع</span></div></div>
+    </div>
+</section>
+
+<!-- PASTA -->
+<section id="pasta">
+    <h2>🍝 المعكرونة | Pasta</h2>
+    <div class="menu-grid">
+        <div class="menu-item"><img src="https://iamhomesteader.com/wp-content/uploads/2022/04/tuscan-chicken.jpg" alt="Pasta with chicken"><div class="menu-content"><h3>Pasta with chicken</h3><span class="price">2.000 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfok3ERVC1Fxk7B1C0i_9OtFoY-KEZy-uoA&s" alt="Pasta with meat"><div class="menu-content"><h3>Pasta with meat</h3><span class="price">2.200 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://whatmollymade.com/wp-content/uploads/2024/01/cajun-sausage-pasta-9.jpg" alt="Pasta with sausage"><div class="menu-content"><h3>Pasta with sausage</h3><span class="price">1.800 ر.ع</span></div></div>
+    </div>
+</section>
+
+<!-- DRINKS -->
+<section id="drinks">
+    <h2>🥤 المشروبات | Drinks</h2>
+    <div class="menu-grid">
+        <!-- Fresh Drinks -->
+        <div class="menu-item"><img src="https://cheznermine.com/wp-content/uploads/2019/07/1-1.jpg" alt="Lemon mint"><div class="menu-content"><h3>Lemon mint</h3><span class="price">0.800 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://vaya.in/recipes/wp-content/uploads/2018/02/mango-frooti.jpg" alt="Mango"><div class="menu-content"><h3>Mango</h3><span class="price">0.900 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZGWq4LePkr9_aZWnGOCW6_CNVm62j6r5tZZbo_NhiRLE2CsSGygxG5AL1PXL1QHbpuw&usqp=CAU" alt="Orange"><div class="menu-content"><h3>Orange</h3><span class="price">0.800 ر.ع</span></div></div>
+
+        <!-- Hot & Cold Drinks -->
+        <div class="menu-item"><img src="https://www.icemountainwater.com/sites/g/files/zmtnxh171/files/2025-03/im-bottle-16_9oz.png" alt="Water"><div class="menu-content"><h3>Water</h3><span class="price">0.100 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://foodess.com/wp-content/uploads/2024/02/Karak-Chai-3.jpg" alt="Karak tea"><div class="menu-content"><h3>Karak tea</h3><span class="price">0.100 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://miro.medium.com/1*yVdgPMqLl7B6jf6WKr28Tw.jpeg" alt="Red tea"><div class="menu-content"><h3>Red tea</h3><span class="price">0.100 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://img.forestessentialsindia.com/blog/wp-content/uploads/2020/02/Green-tea.png" alt="Green tea"><div class="menu-content"><h3>Green tea</h3><span class="price">0.100 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://colombiancoffee.us/cdn/shop/articles/turkish-coffee-a-distinction-of-the-people-of-turkey-209132_15e8ba02-8035-4262-93f4-83aae3ed6526.png?v=1751659690&width=1500" alt="Turkish coffee"><div class="menu-content"><h3>Turkish coffee</h3><span class="price">0.400 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=300&fit=crop" alt="Plain coffee"><div class="menu-content"><h3>Plain coffee</h3><span class="price">0.400 ر.ع</span></div></div>
+        <div class="menu-item"><img src="https://mellcrest.com/media/catalog/product/cache/3935f781f896db0b4829c3b0fa2c11d5/n/e/nescs_2.jpg" alt="Nescafe plain"><div class="menu-content"><h3>Nescafe</h3><span class="price">0.500 ر.ع</span></div></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 مطعم حكاية</p>
+    <p>للحجز أو الاستفسارات: @hikaya.com | هاتف: 99219999</p>
+</footer>
+
+</body>
+</html>
